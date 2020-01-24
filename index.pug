@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+    head
+        meta( name='viewport', content='width=device-width, initial-scale=1' )
+        meta(name="theme-color" content="#F6F6F6")
+        link(href="https://fonts.googleapis.com/css?family=Exo+2"  rel="stylesheet")
+        link(href="./style.scss"  rel="stylesheet")
+        title Ahmad Jarrar
+    body
+        header.container.flex-custome.align-items-center.flex-xs-column.justify-content-between 
+            include ./component/header/header.pug
+        main.container
+            article.body-content
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quod rem blanditiis accusantium iste autem recusandae odit sequi eos placeat. Maxime sint corporis libero natus quas praesentium! Quam, ipsum dolorum.
+                //include ./component/about-me/about-me.pug
+                //include ./component/skills/skills.pug
+                //include ./component/experience/experience.pug
+                //include ./component/my-project/my-project.pug 
+            script(src="./app.js")    

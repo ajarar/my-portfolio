@@ -1,0 +1,47 @@
+body {
+    background-color: var(--body-background);
+    font-family: 'Exo 2', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+    color : inherit;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0
+}
+@mixin animations($attribute , $start-value , $end-value , $time) {
+    @keyframes animations {
+        0% {
+            #{$attribute}: $start-value;
+        }
+        100% {
+            #{$attribute}: $end-value;
+        }
+    }
+    animation: animations #{$time};
+}
+
+@mixin overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--overlay-bg);
+}

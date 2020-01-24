@@ -1,0 +1,36 @@
+-
+    let siteItems = [
+        {
+            label : "About Me",
+            id : "about-me",
+            active : true
+        },
+        {
+            label : "Skills",
+            id : "skills"
+        },
+        {
+            label : "Experience",
+            id : "experience"
+        },
+        {
+            label : "Graduation PJ",
+            id : "my-project"
+        }
+    ]
+
+div.site-logo
+    span Ahmad R. 
+    span.site-logo__brand Jarrar
+nav.site-menu
+    ul.container.d-none.d-md-flex.flex-column.flex-md-row.justify-content-center.align-items-end 
+        each item in siteItems
+            - let { label , id , active} = item
+            - let activeClass = active ? 'active' : ''
+            li(class=activeClass)
+                a(href=id aria-label=label) 
+                    | !{label}
+                    if(active)
+                        span.sr-only Current
+    a.site-menu-btn-menu.d-sm-block.d-md-none(title="Open site menu" aria-expanded="false")
+        span                    

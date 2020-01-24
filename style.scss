@@ -1,0 +1,11 @@
+@import './node_modules/normalize.css/normalize.css';
+@import './fonts/icons.scss';
+@import './global-style/grid/bootstrap-grid.scss';
+@import './global-style/mixins/font.scss';
+@import './global-style/mixins/include-media';
+@import './global-style/variables.scss' ;
+@import './global-style/global-style.scss' ;
+@import './component/header/header';
+@import './component/aside/aside';
+@import './component/content/content';
+@import './component/footer/footer';
