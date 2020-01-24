@@ -12,14 +12,14 @@ header {
     }
     .site-menu {
         padding-left: 40px;
-        font-weight: 600;
         li {
             @include font-size(15);
+            font-weight: 600;
             &:not(:last-of-type) {
                 padding-right: 25px;
             }
             @include media('>=tablet') {
-                a {
+                button {
                     position: relative;
                     &:after , &:before {
                         content: '';
@@ -40,7 +40,7 @@ header {
                     }
                 }
                 &:hover , &.active {
-                    a {
+                    button {
                         &:before , &:after {
                             width: 50%;
                         }
@@ -48,7 +48,7 @@ header {
                 }
             }
             &.active {
-                a {
+                button {
                     cursor: default;
                     pointer-events: none;
                 }

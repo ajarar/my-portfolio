@@ -28,7 +28,7 @@ nav.site-menu
             - let { label , id , active} = item
             - let activeClass = active ? 'active' : ''
             li(class=activeClass)
-                a(href=id aria-label=label) 
+                button(data-href=id) 
                     | !{label}
                     if(active)
                         span.sr-only Current

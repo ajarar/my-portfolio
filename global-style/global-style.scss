@@ -13,6 +13,18 @@ a {
     text-decoration: none;
     color : inherit;
 }
+button {
+    border: none;
+    background: transparent;
+    color : inherit;
+    font-weight: inherit;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
 .sr-only {
     position: absolute;
     width: 1px;
